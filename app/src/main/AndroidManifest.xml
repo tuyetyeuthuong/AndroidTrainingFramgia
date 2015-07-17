@@ -12,6 +12,10 @@
         <activity
             android:name=".service.ServiceTestActivity"
             android:label="@string/app_name">
+
+        </activity>
+
+        <activity android:name=".contentprovider.ContentProviderTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,6 +24,12 @@
         </activity>
 
         <service android:name=".service.DownloadHtmlService" />
+
+        <provider
+            android:name=".contentprovider.StudentsProvider"
+            android:authorities="com.framgia.provider.College">
+
+        </provider>
     </application>
 
 </manifest>
